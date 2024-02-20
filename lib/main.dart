@@ -6,13 +6,13 @@ import 'router/router.dart';
 void main() {
   runApp(
     const ProviderScope(
-      child: ExampleApp(),
+      child: BaseApp(),
     ),
   );
 }
 
-class ExampleApp extends ConsumerWidget {
-  const ExampleApp({super.key});
+class BaseApp extends ConsumerWidget {
+  const BaseApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

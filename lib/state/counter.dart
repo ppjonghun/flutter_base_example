@@ -1,9 +1,9 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'box_counter.g.dart';
+part 'counter.g.dart';
 
 @riverpod
-class BoxCounter extends _$BoxCounter {
+class Counter extends _$Counter {
   @override
   int build() => 0;
 

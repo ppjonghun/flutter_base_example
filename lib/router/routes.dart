@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_base_example/pages/counter_page.dart';
+import 'package:flutter_base_example/pages/home_page.dart';
 import 'package:go_router/go_router.dart';
-import 'package:example/pages/delivery_box_select_page.dart';
 
 import '../pages/splash_page.dart';
 
@@ -22,11 +23,11 @@ class HomeRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const SplashPage();
+    return const HomePage();
   }
 }
 
-@TypedGoRoute<SplashRoute>(path: '/')
+@TypedGoRoute<SplashRoute>(path: '/splash')
 class SplashRoute extends GoRouteData {
   const SplashRoute();
 
@@ -36,12 +37,12 @@ class SplashRoute extends GoRouteData {
   }
 }
 
-@TypedGoRoute<DeliveryBoxSelectRoute>(path: '/box_select')
-class DeliveryBoxSelectRoute extends GoRouteData {
-  const DeliveryBoxSelectRoute();
+@TypedGoRoute<CounterRoute>(path: '/counter')
+class CounterRoute extends GoRouteData {
+  const CounterRoute();
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const DeliveryBoxSelectPage();
+    return const CounterPage();
   }
 }

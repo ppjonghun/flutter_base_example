@@ -12,11 +12,11 @@ class SplashPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('Splash Page'),
-              const SizedBox(height: 16),
+              Image.asset('assets/images/splash.png'),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  context.go('/box_select');
+                  context.go('/');
                 },
                 child: const Text('이동'),
               ),
