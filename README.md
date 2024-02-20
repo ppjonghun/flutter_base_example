@@ -1,4 +1,4 @@
-# Riverpod + GoRouter
+# Flutter Base
 
 ## Dependencies and Libs version
 
@@ -12,4 +12,6 @@ Run this.
 flutter clean && flutter pub get && flutter pub upgrade && flutter pub run build_runner watch -d
 ```
 
-reference : https://github.com/lucavenir/go_router_riverpod/tree/master/example
+
+## Reference
+Riverpod, GoRouter : https://github.com/lucavenir/go_router_riverpod/tree/master/example
