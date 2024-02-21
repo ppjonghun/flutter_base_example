@@ -20,6 +20,15 @@ class BaseDrawerWidget extends ConsumerWidget {
               icon: const Icon(Icons.arrow_forward_ios_sharp),
             ),
           ),
+          ListTile(
+            title: const Text('Logout'),
+            trailing: IconButton(
+              onPressed: () {
+                context.push('/logout');
+              },
+              icon: const Icon(Icons.exit_to_app),
+            ),
+          ),
         ],
       ),
     );

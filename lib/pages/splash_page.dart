@@ -16,7 +16,7 @@ class SplashPage extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  context.go('/');
+                  context.push('/login');
                 },
                 child: const Text('이동'),
               ),
