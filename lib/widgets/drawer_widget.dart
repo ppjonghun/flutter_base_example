@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class BaseDrawerWidget extends ConsumerWidget {
-  const BaseDrawerWidget({super.key});
+class MenuDrawerWidget extends ConsumerWidget {
+  const MenuDrawerWidget({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Drawer(
       child: ListView(
         children: [
-          const DrawerHeader(child: Text('Drawer Header')),
+          const DrawerHeader(child: Text('Menu Drawer Header')),
           ListTile(
             title: const Text('Go Counter Page'),
             trailing: IconButton(
@@ -29,6 +29,21 @@ class BaseDrawerWidget extends ConsumerWidget {
               icon: const Icon(Icons.exit_to_app),
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class UserInfoDrawerWidget extends ConsumerWidget {
+  const UserInfoDrawerWidget({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Drawer(
+      child: ListView(
+        children: const [
+          DrawerHeader(child: Text('User Drawer Header')),
         ],
       ),
     );
